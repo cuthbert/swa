@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>BrowserCheck</title>
+</head>
+<body>
+	E-Mail: <input type="email" /> <br/>
+	Zahl: <input type="number" min="0" max="100" step="1.5"/><br/>
+	Range: <input type="range" min="0" max="10" step="1"/><br/>
+	Farbe: <input type="color"/><br/>
+	
+	<form action="BrowserCheck.html" method="get">
+		Datum: <input type="date" name="date"/><br/>
+		Zeit: <input type="time" name="time"/><br/>
+		
+		<input type="submit" name="submit" value="Button"/>
+	</form>
+	<!-- Erklärung:  
+	Firefox 16: nichts geht!
+	IE 9: nichts geht!
+	Opera 12.02: alles geht!  file://.../BrowserCheck.html?date=2012-11-16&time=23%3A57%3A00&submit=Button-->
+</body>
+</html>
