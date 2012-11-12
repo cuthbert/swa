@@ -1,0 +1,68 @@
+body {
+	background-color: #f6f6f6
+}
+
+/*Titel*/
+h1 {
+	color: #0000dd;
+	font-size: 1.2em
+}
+
+/*Produktnamen*/
+a.product:link {
+	color: #0000dd
+}
+a.product:visited {
+	color: #dd00dd
+}
+
+
+span.price {
+	color: green
+}
+
+input.simplebutton {
+	background-color: orange
+}
+
+
+
+/*div-Positionierung*/
+div#logo {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+div#user_navigation {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+div#container {
+	position: fixed;
+	width: 80%;
+}
+div#searchbar {
+	position: absolute;
+	top: 50px;
+	width: 100%;
+}
+
+div#info_container {
+	position: absolute;
+	width: 20%;
+	top: 100px;
+}
+
+div#main_container {
+	position: absolute;
+	width: 80%;
+	top: 100px;
+	right: 0px;
+}
+
+input#searchfield {
+	width: 80%;
+}
