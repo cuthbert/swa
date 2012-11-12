@@ -1,0 +1,17 @@
+table {
+	text-align: center;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+tr.row0 {
+	background-color:#DDDDDD
+}
+
+tr.row1 {
+	background-color:#BBBBBB
+}
+
+tr.last {
+	font-style: italic
+}
