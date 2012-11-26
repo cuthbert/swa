@@ -1,0 +1,1 @@
+<div id="logo"><h1>Hier kommt ein schönes Logo hin</h1></div>
