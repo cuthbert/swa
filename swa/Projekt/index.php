@@ -1,3 +1,20 @@
+<?php
+session_start();
+
+$action = !empty($_GET['action']) ? $_GET['action'] : '';
+
+if(!empty($_SESSION['email'])) {
+	$sessionValue = !empty($_COOKIE['sessionValue'])?$_COOKIE['sessionValue']:'';
+	if ($sessionValue != $_SESSION['sessionValue']) {
+		session_destroy();
+		echo "EPIC FAIL, N00b!";
+		exit();
+	}
+	$_SESSION['sessionValue'] = md5($_SESSION['sessionValue']);
+	setcookie('sessionValue', $_SESSION['sessionValue']);
+}
+
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -16,8 +33,21 @@
 			</div>
 			<?php 
 				include('info.php');
-				include('main.php');
 			?>
+			<div id="main_container">
+			<?php
+				switch($action) {
+					case 'registry':
+						include('registry.php');
+						break;
+					case 'product':
+						include('product.php');
+						break;
+					default:
+						include('main.php');
+				}				
+			?>
+			</div>
 		</div>
 	</body>
 </html>

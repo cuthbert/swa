@@ -46,20 +46,20 @@ div#container {
 }
 div#searchbar {
 	position: absolute;
-	top: 50px;
+	top: 100px;
 	width: 100%;
 }
 
 div#info_container {
 	position: absolute;
 	width: 20%;
-	top: 100px;
+	top: 150px;
 }
 
 div#main_container {
 	position: absolute;
 	width: 80%;
-	top: 100px;
+	top: 150px;
 	right: 0px;
 }
 
